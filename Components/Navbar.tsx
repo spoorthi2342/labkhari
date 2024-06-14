@@ -526,54 +526,55 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch }) => {
                                     className="" alt='logo' />                            </span>
                         </Link>
                         <div className="flex items-center lg:order-2">
-            {/* Search bar for large screens */}
-            <div className=" lg:flex items-center flex-1 justify-center">
-                <form className="flex items-center max-w-md w-full" onSubmit={handleSearchSubmit}>
-                    <input
-                        type="text"
-                        id="simple-search"
-                        className="bg-gray-50 border text-gray-900 text-sm rounded-lg focus:ring-[#103178] focus:border-[#103178] block w-full pl-10 p-1.5 dark:placeholder-gray-400 dark:focus:ring-[#103178] border-[#103178] dark:focus:border-[#103178]"
-                        placeholder="Search Product name..."
-                        value={searchQuery}
-                        onChange={handleSearchChange}
-                        required
-                    />
-                    <button
-                        type="submit"
-                        className="p-2 ml-2 text-sm font-medium text-white bg-[#103178] rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-[#103178] dark:hover:bg-[#103178] dark:focus:ring-[#103178]"
-                    >
-                        <FaSearch />
-                    </button>
-                </form>
-            </div>
-            <div className="flex items-center">
-                {/* Search icon for mobile */}
-                <button onClick={toggleSearch} className="block lg:hidden md:ml-4 text-black focus:outline-none mr-4">
-                    <FaSearch />
-                </button>
-            </div>
-            <a href="/cart" className="relative block  ml-5  md:ml-4 text-black text-2xl font-medium rounded-lg px-5 py-2.5 text-center">
-                <FaCartShopping />
-                <span className="absolute -top-1 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white bg-[#103178] rounded-full">
-                    {count}
-                </span>
-            </a>
-            {admin && (
-                <Link href="/admin/product">
-                    <span className="block text-black text-2xl md:mr-0 font-medium rounded-lg px-5 py-2.5 text-center">
-                        <RiAdminFill />
-                    </span>
-                </Link>
-            )}
-            <div className="block relative top-1 md:ml-6 md:mr-0 mr-4 ml-4">
-                <button onClick={toggleSidebar} className="text-black focus:outline-none">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M0 5h20V3H0v2zM0 10h20V8H0v2zm0 5h20v-2H0v2z" clipRule="evenodd" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-                    </div>
+
+                            {/* Search bar for large screens */}
+                            <div className="hidden lg:flex items-center flex-1 justify-center">
+                                <form className="flex items-center max-w-md w-full" onSubmit={handleSearchSubmit}>
+                                    <input
+                                        type="text"
+                                        id="simple-search"
+                                        className="bg-gray-50 border text-gray-900 text-sm rounded-lg focus:ring-[#103178] focus:border-[#103178] block w-full pl-10 p-1.5 dark:placeholder-gray-400 dark:focus:ring-[#103178] border-[#103178] dark:focus:border-[#103178]"
+                                        placeholder="Search Product name..."
+                                        value={searchQuery}
+                                        onChange={handleSearchChange}
+                                        required
+                                    />
+                                    <button
+                                        type="submit"
+                                        className="p-2 ml-2 text-sm font-medium text-white bg-[#103178] rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-[#103178] dark:hover:bg-[#103178] dark:focus:ring-[#103178]"
+                                    >
+                                        <FaSearch />
+                                     </button>
+                                       </form>
+                                    </div>
+                                   <div className="flex items-center">
+                                        {/* Search icon for mobile */}
+                                     <button onClick={toggleSearch} className="block lg:hidden md:ml-4 text-black focus:outline-none mr-4">
+                                    <FaSearch />
+                                </button>
+                            </div>
+                            <a href="/cart" className="relative block md:ml-4 text-black text-2xl font-medium rounded-lg px-5 py-2.5 text-center">
+                                <FaCartShopping />
+                                <span className="absolute top-1 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white bg-[#103178] rounded-full">
+                                    {count}
+                                </span>
+                            </a>
+                            {admin && (
+                                <Link href="/admin/product">
+                                    <span className="block text-black text-2xl md:mr-0 font-medium rounded-lg px-5 py-2.5 text-center">
+                                        <RiAdminFill />
+                                    </span>
+                                </Link>
+                            )}
+                            <div className="block relative top-1 md:ml-6 md:mr-0 mr-4 ml-4">
+                                <button onClick={toggleSidebar} className="text-black focus:outline-none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fillRule="evenodd" d="M0 5h20V3H0v2zM0 10h20V8H0v2zm0 5h20v-2H0v2z" clipRule="evenodd" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        </div>
                 </nav>
             </header>
 
