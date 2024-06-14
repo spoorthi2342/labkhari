@@ -27,16 +27,16 @@ const Footer = () => {
                 <div className="container mx-auto">
                     <div className="flex justify-center space-x-6 mb-4">
                         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
-                            <FaFacebook className="text-2xl gap-3" />
+                            <FaFacebook className="text-2xl lg:flex gap-3" />
                         </a>
                         <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
-                            <FaTwitter className="text-2xl gap-3" />
+                            <FaTwitter className="text-2xl lg-flex gap-3" />
                         </a>
                         <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
-                            <FaInstagram className="text-2xl gap-3" />
+                            <FaInstagram className="text-2xl lg-flex gap-3" />
                         </a>
                         <a href="https://wa.me/YOUR_NUMBER" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
-                            <FaWhatsapp className="text-2xl gap-3" />
+                            <FaWhatsapp className="text-2xl lg-flex gap-3" />
                         </a>
                     </div>
                     <div className="text-center">
