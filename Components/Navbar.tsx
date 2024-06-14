@@ -552,11 +552,12 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch }) => {
                     <FaSearch />
                 </button>
             </div>
-            <a href="/cart" className="relative block  ml-5 top-6 md:ml-4 text-black text-2xl font-medium rounded-lg px-5 py-2.5 text-center">
-                <FaCartShopping />
-                <span className="absolute -top-1 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white bg-[#103178] rounded-full">
+            <span className="absolute -top-1 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white bg-[#103178] rounded-full">
                     {count}
                 </span>
+            <a href="/cart" className="relative block  ml-5 top-6 md:ml-4 text-black text-2xl font-medium rounded-lg px-5 py-2.5 text-center">
+                <FaCartShopping />
+               
             </a>
             {admin && (
                 <Link href="/admin/product">
