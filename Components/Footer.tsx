@@ -25,20 +25,21 @@ const Footer = () => {
             <div className="border-t border-[#CCCCCC]"></div>
             <footer className="bg-[#103178] shadow-lg w-full py-6 dark:bg-[#103178] md:mb-0 mb-14">
                 <div className="container mx-auto">
-                    <div className="flex justify-center space-x-6 mb-4">
+                    <div className="flex justify-center space-x-4 md:space-x-6 mb-4">
                         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
-                            <FaFacebook className="text-2xl lg:flex gap-3" />
+                            <FaFacebook className="text-2xl" />
                         </a>
                         <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
-                            <FaTwitter className="text-2xl lg-flex gap-3" />
+                            <FaTwitter className="text-2xl" />
                         </a>
                         <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
-                            <FaInstagram className="text-2xl lg-flex gap-3" />
+                            <FaInstagram className="text-2xl" />
                         </a>
                         <a href="https://wa.me/YOUR_NUMBER" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
-                            <FaWhatsapp className="text-2xl lg-flex gap-3" />
+                            <FaWhatsapp className="text-2xl" />
                         </a>
                     </div>
+
                     <div className="text-center">
                         <span className="text-sm text-white dark:text-white">
                             © 2024 <a href="/" className="hover:underline">Labhkari™</a>. All Rights Reserved.
