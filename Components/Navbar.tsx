@@ -607,7 +607,7 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch }) => {
             }
 
             {/* Sub Navbar */}
-            <div id="default-carousel" className="fixed w-full top-14 z-30 shadow-2xl" data-carousel="slide1">
+            <div id="default-carousel" className=" lg-flex fixed w-full top-14 z-30 shadow-2xl" data-carousel="slide1">
                 <div className="relative overflow-hidden h-20 lg:hidden">
                     <ul className="flex bg-white w-full flex-wrap justify-center items-center py-3 bottom-0 lg:hidden" data-carousel-item1>
                         <li className="border-r  px-5 last:border-r-0">
