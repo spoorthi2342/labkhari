@@ -528,7 +528,7 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch }) => {
                         <div className="flex items-center lg:order-2">
 
                             {/* Search bar for large screens */}
-                            <div className=" lg:flex items-center flex-1 justify-center">
+                            <div className="hidden lg:flex items-center flex-1 justify-center">
                                 <form className="flex items-center max-w-md w-full" onSubmit={handleSearchSubmit}>
                                     <input
                                         type="text"
