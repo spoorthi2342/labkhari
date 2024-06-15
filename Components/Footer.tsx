@@ -25,17 +25,17 @@ const Footer = () => {
 
             <footer className="bg-[#103178] shadow-lg w-full py-6 dark:bg-[#103178] mb-14">
                 <div className="container mx-auto">
-                    <div className="flex justify-center space-x-6">
-                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
+                    <div className="flex justify-between space-x-6">
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className=" gap-4 justify-between text-white hover:text-gray-300">
                             <FaFacebook className="text-2xl" />
                         </a>
-                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="gap-4 justify-between text-white hover:text-gray-300">
                             <FaTwitter className="text-2xl" />
                         </a>
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className=" gap-4 justify-between  text-white hover:text-gray-300">
                             <FaInstagram className="text-2xl" />
                         </a>
-                        <a href="https://wa.me/YOUR_NUMBER" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
+                        <a href="https://wa.me/YOUR_NUMBER" target="_blank" rel="noopener noreferrer" className="text-white justify-between hover:text-gray-300">
                             <FaWhatsapp className="text-2xl" />
                         </a>
                     </div>
