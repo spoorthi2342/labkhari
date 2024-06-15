@@ -523,13 +523,13 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch }) => {
                                 <Image src={Logo2}
                                     width={100}
                                     height={100}
-                                    className="" alt='logo' />                            
-                                    </span>
+                                    className="" alt='logo' />
+                            </span>
                         </Link>
                         <div className="flex items-center lg:order-2">
 
                             {/* Search bar for large screens */}
-                            <div className=" lg:flex items-center flex-1 justify-center sm:hidden ">
+                            <div className="hidden sm:flex lg:flex items-center flex-1 justify-center top-2">
                                 <form className="flex items-center max-w-md w-full" onSubmit={handleSearchSubmit}>
                                     <input
                                         type="text"
@@ -548,6 +548,7 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch }) => {
                                     </button>
                                 </form>
                             </div>
+
 
                             {/* Search icon for mobile */}
                             <div className="flex items-center lg:hidden">
