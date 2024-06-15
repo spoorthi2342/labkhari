@@ -546,6 +546,13 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch }) => {
             <FaSearch />
         </button>
     </form>
+    <div className="block lg:block relative top-1 ml-4 mr-4 md:ml-6 md:mr-0">
+                                <button onClick={toggleSidebar} className="text-black focus:outline-none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fillRule="evenodd" d="M0 5h20V3H0v2zM0 10h20V8H0v2zm0 5h20v-2H0v2z" clipRule="evenodd" />
+                                    </svg>
+                                </button>
+                            </div>
 </div>
 
 {/* Search icon for mobile */}
