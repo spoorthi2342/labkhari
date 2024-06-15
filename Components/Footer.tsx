@@ -5,6 +5,24 @@ const Footer = () => {
     return (
         <div>
             {/* Your other footer content */}
+            <section className="bg-[#103178] py-6 shadow-lg">
+                <div className="container mx-auto">
+                    <div className="grid grid-cols-1 gap-4 text-center md:text-left">
+                        <div>
+                            <h2 className="text-2xl font-bold text-white">Free Delivery</h2>
+                            <p className="text-white">Free delivery on purchase above 1k</p>
+                        </div>
+                        <div>
+                            <h2 className="text-2xl font-bold text-white">100% Buy Back</h2>
+                            <p className="text-white">Guaranteed buy back on all products</p>
+                        </div>
+                        <div>
+                            <h2 className="text-2xl font-bold text-white">Non-Contact Shipping</h2>
+                            <p className="text-white">Safe and secure non-contact shipping</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
             
             <footer className="bg-[#103178] shadow-lg w-full py-6 dark:bg-[#103178] mb-14">
                 <div className="container mx-auto">
