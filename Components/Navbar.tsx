@@ -523,39 +523,37 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch }) => {
                                 <Image src={Logo2}
                                     width={100}
                                     height={100}
-                                    className="" alt='logo' />
-                            </span>
+                                    className="" alt='logo' />                            </span>
                         </Link>
                         <div className="flex items-center lg:order-2">
 
-                            {/* Search bar for large screens */}
-                            <div className=" sm:hiddenitems-center flex-1 justify-center top-2">
-                                <form className=" sm:hidden flex items-center max-w-md w-full" onSubmit={handleSearchSubmit}>
-                                    <input
-                                        type="text"
-                                        id="simple-search"
-                                        className="bg-gray-50 border text-gray-900 text-sm rounded-lg focus:ring-[#103178] focus:border-[#103178] block w-full pl-10 p-1.5 dark:placeholder-gray-400 dark:focus:ring-[#103178] border-[#103178] dark:focus:border-[#103178]"
-                                        placeholder="Search Product name..."
-                                        value={searchQuery}
-                                        onChange={handleSearchChange}
-                                        required
-                                    />
-                                    <button
-                                        type="submit"
-                                        className="p-2 ml-2 text-sm font-medium text-white bg-[#103178] rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-[#103178] dark:hover:bg-[#103178] dark:focus:ring-[#103178]"
-                                    >
-                                        <FaSearch />
-                                    </button>
-                                </form>
-                            </div>
+                           {/* Search bar for large screens */}
+<div className=" hidden lg:flex items-center flex-1 justify-center">
+    <form className="flex items-center max-w-md w-full" onSubmit={handleSearchSubmit}>
+        <input
+            type="text"
+            id="simple-search"
+            className="bg-gray-50 border text-gray-900 text-sm rounded-lg focus:ring-[#103178] focus:border-[#103178] block w-full pl-10 p-1.5 dark:placeholder-gray-400 dark:focus:ring-[#103178] border-[#103178] dark:focus:border-[#103178]"
+            placeholder="Search Product name..."
+            value={searchQuery}
+            onChange={handleSearchChange}
+            required
+        />
+        <button
+            type="submit"
+            className="p-2 ml-2 text-sm font-medium text-white bg-[#103178] rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-[#103178] dark:hover:bg-[#103178] dark:focus:ring-[#103178]"
+        >
+            <FaSearch />
+        </button>
+    </form>
+</div>
 
-
-                            {/* Search icon for mobile */}
-                            <div className="flex items-center lg:hidden">
-                                <button onClick={toggleSearch} className="text-black focus:outline-none mr-4">
-                                    <FaSearch />
-                                </button>
-                            </div>
+{/* Search icon for mobile */}
+<div className="flex items-center lg:hidden">
+    <button onClick={toggleSearch} className="text-black focus:outline-none mr-4">
+        <FaSearch />
+    </button>
+</div>
 
                             <a href="/cart" className="relative block md:ml-4 text-black text-2xl font-medium rounded-lg px-5 py-2.5 text-center">
                                 <FaCartShopping />
@@ -585,7 +583,7 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch }) => {
 
 
             {/* searchbar mobile view toggle */}
-            {/* {
+            {
                 isSearchOpen && (
                     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
                         <div className="bg-white p-4 rounded-lg shadow-lg relative w-11/12 max-w-md">
@@ -610,12 +608,12 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch }) => {
                         </div>
                     </div>
                 )
-            } */}
-c5
+            }
+
             {/* Sub Navbar */}
             <div id="default-carousel" className=" lg-flex fixed w-full top-14 z-30 shadow-2xl" data-carousel="slide1">
-                <div className="relative  h-20 ">
-                    <ul className="flex bg-white w-full flex-wrap justify-center items-center py-3 bottom-0 " data-carousel-item1>
+                <div className="relative overflow-hidden h-20 lg:hidden">
+                    <ul className="flex bg-white w-full flex-wrap justify-center items-center py-3 bottom-0 lg:hidden" data-carousel-item1>
                         <li className="border-r  px-5 last:border-r-0">
                             <Link href={{ pathname: '/category', query: { cat: 'Health' } }} className="text-black hover:text-black flex flex-col items-center space-y-1">
                                 <FaHeartbeat className="text-3xl text-red-400" />
@@ -641,7 +639,7 @@ c5
                             </Link>
                         </li>
                     </ul>
-                    <ul className="flex bg-white w-full flex-wrap justify-center items-center py-5 bottom-0 z-40 " data-carousel-item1>
+                    <ul className="flex bg-white w-full flex-wrap justify-center items-center py-5 bottom-0 z-40 lg:hidden" data-carousel-item1>
                         <li className="px-3 border-r last:border-r-0">
                             <Link href={{ pathname: '/category', query: { cat: 'Home' } }} className="text-black hover:text-black flex flex-col items-center space-y-1">
                                 <MdCleanHands className="text-3xl text-indigo-400" />
