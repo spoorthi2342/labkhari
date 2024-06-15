@@ -529,8 +529,8 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch }) => {
                         <div className="flex items-center lg:order-2">
 
                             {/* Search bar for large screens */}
-                            <div className="hidden sm:flex lg:flex items-center flex-1 justify-center top-2">
-                                <form className="flex items-center max-w-md w-full" onSubmit={handleSearchSubmit}>
+                            <div className=" sm:hidden items-center flex-1 justify-center top-2">
+                                <form className=" sm:hidden flex items-center max-w-md w-full" onSubmit={handleSearchSubmit}>
                                     <input
                                         type="text"
                                         id="simple-search"
@@ -588,7 +588,7 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch }) => {
             {
                 isSearchOpen && (
                     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-                        <div className="bg-white p-4 rounded-lg shadow-lg relative w-11/12 max-w-md">
+                        {/* <div className="bg-white p-4 rounded-lg shadow-lg relative w-11/12 max-w-md">
                             <button onClick={toggleSearch} className="absolute top-0 right-0 text-gray-600 hover:text-gray-800 focus:outline-none">
                                 <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -607,7 +607,7 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch }) => {
                                     Search
                                 </button>
                             </form>
-                        </div>
+                        </div> */}
                     </div>
                 )
             }
