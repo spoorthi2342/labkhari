@@ -613,8 +613,8 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch }) => {
 
             {/* Sub Navbar */}
             <div id="default-carousel" className=" lg-flex fixed w-full top-14 z-30 shadow-2xl" data-carousel="slide1">
-                <div className="relative overflow-hidden h-20 ">
-                    <ul className="flex bg-white w-full flex-wrap justify-center items-center py-3 bottom-0 lg:hidden" data-carousel-item1>
+                <div className="relative  h-20 ">
+                    <ul className="flex bg-white w-full flex-wrap justify-center items-center py-3 bottom-0 " data-carousel-item1>
                         <li className="border-r  px-5 last:border-r-0">
                             <Link href={{ pathname: '/category', query: { cat: 'Health' } }} className="text-black hover:text-black flex flex-col items-center space-y-1">
                                 <FaHeartbeat className="text-3xl text-red-400" />
@@ -640,7 +640,7 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch }) => {
                             </Link>
                         </li>
                     </ul>
-                    <ul className="flex bg-white w-full flex-wrap justify-center items-center py-5 bottom-0 z-40 lg:hidden" data-carousel-item1>
+                    <ul className="flex bg-white w-full flex-wrap justify-center items-center py-5 bottom-0 z-40 " data-carousel-item1>
                         <li className="px-3 border-r last:border-r-0">
                             <Link href={{ pathname: '/category', query: { cat: 'Home' } }} className="text-black hover:text-black flex flex-col items-center space-y-1">
                                 <MdCleanHands className="text-3xl text-indigo-400" />
